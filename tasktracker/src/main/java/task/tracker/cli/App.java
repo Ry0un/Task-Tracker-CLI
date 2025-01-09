@@ -1,9 +1,18 @@
 package task.tracker.cli;
-
+import java.util.Scanner;
 public class App {
     public static void main( String[] args ){
-    Task task = new Task("Task 1");
-    System.out.println(task.toString());
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("# Adding New Task ");
+        System.out.print("task-cli add ");
+    
+    
+    
+    
+
+
+    
 
 
 

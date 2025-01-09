@@ -3,14 +3,14 @@ package task.tracker.cli;
 import java.time.LocalDate;
 public class Task {
     private String description;
-    private int id;
+    private int id =1;
     private String createDate;
     private String updateDate;
 
     public Task(String description){
         LocalDate now = LocalDate.now();
         this.description=description;
-        this.id=id;
+        this.id=id++;
         this.createDate=now.toString();
         this.updateDate=updateDate;
     }
