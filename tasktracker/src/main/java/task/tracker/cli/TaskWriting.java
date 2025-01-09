@@ -6,20 +6,9 @@ import java.nio.file.Path;
 
 public class TaskWriting {
 
-    private Task taskArray[];
+    private Task taskArray[] = new Task[10];
     private Path path = Path.of("c:/Users/zerou/Documents/Codes/repos/Task-Tracker-CLI/tasktracker/"); 
-    
-
-    public void writeTask(String description){
-        try {
-            Files.writeString(path.resolve("Tasks.json"), description);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-
-
+    private String arrayString;
     
 
 
